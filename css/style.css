@@ -1,0 +1,431 @@
+
+* {
+	box-sizing: border-box;
+  }
+body {
+	margin: 0;
+	font-family: Roboto;
+	background-color:  rgb(199, 199, 199);
+	color: white;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+hr {
+	border: 1px solid #ffffff!important;
+	font-size: 0;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+h2, h3, h4 {
+	text-shadow: 2px 2px 5px black;
+}
+
+.pocetna {
+	text-align: left;
+}
+
+img {
+	border: 1px solid white;
+	box-shadow: 0px 4px 5px rgba(0,0,0,0.5);
+}
+ul .menu {
+	margin: 0;
+}
+.wrapper {
+	width: 70%;
+}
+.header {
+	background: url(../img/header.jpg) no-repeat top center;
+	background-size: cover;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	line-height: 3em;
+}
+.headergradient {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.644), rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), rgba(255, 0, 0, 0));
+	min-height: 401px;
+}
+.headercontent {
+	padding: 85px 50px;
+}
+.logo {
+	width: 200px;
+	vertical-align: middle;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	border: 0;
+	box-shadow: none;
+}
+.bela {
+	color: white;
+}
+.bela-pozadina {
+	background-color: white!important;
+	color: #161d75!important;
+}
+.bela-pozadina label {
+	color: black;
+}
+.bela-pozadina a{
+	color: black!important;
+}
+button.bela-pozadina{
+	color: black!important;
+}
+marquee p{
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+marquee {
+	box-shadow: 0px 0px 8px rgb(0, 0, 0);
+	padding: 5px;
+	margin-top: 4px;
+}
+.logo:hover {
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	transform: rotate(20deg);
+}
+.title {
+	font-size: 2.5em;
+	font-weight: bold;
+	vertical-align: middle;
+	margin-left: 1em;
+	color: white;
+	text-shadow: 2px 5px 5px black;
+}
+.navbar {
+	-webkit-position: sticky;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: #161d75;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	z-index: 1;
+}
+.menu {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+.menu li {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	list-style-type: none;
+	list-style-position: outside;
+	width: 16.6666%;
+	position: relative;
+}
+.menu li a {
+	display: block;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: bold;
+	-webkit-transition: 0.7s;
+	transition: 0.7s;
+	text-shadow: 1px 2px 5px black;
+}
+.mmenu {
+	display: none !important;
+	position: absolute;
+	right: 10%;
+	top: 30%;
+	color: white;
+	background-color: #161d75;
+	padding: 10px;
+	font-size: 1.5em;
+}
+.mnav {
+  height: 100%; 
+  width: 0;
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #161d75;
+  overflow-x: hidden;
+  padding-top: 100px;
+  transition: 0.5s;
+}
+.mnav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.mnav .closebtn {
+	position: absolute;
+	right: 37.5px;
+	top: 31px;
+	color: white;
+	background-color: #161d75;
+	padding: 10px;
+	font-size: 1.5em;
+}
+.active {
+	background-color: #0d1146;
+}
+
+  input {
+	text-align: center;
+	margin: 20px 0;
+  }
+  input:invalid {
+	border: red solid 2px !important;
+  }
+  label[for="termin"]{
+	  font-size: 2em;
+  }
+  label[for="brojKarata"] {
+	  margin-top: 20px;
+  }
+  .mt {
+	  padding-top: 140px;
+  }
+  input[type="email"], input[type="number"], input[type="text"], input[type="tel"], input[type="radio"] textarea {
+	width: 100%;
+	font-size: 80%;
+	padding: 10px;
+	margin: 10px 0;
+	box-sizing: border-box;
+  }
+  input[type="text"], textarea {
+	width: 100%;
+	font-size: 80%;
+	padding: 10px;
+	box-sizing: border-box;
+  }
+  button {
+	font-size: 1.5em;
+	width: 50%;
+	background-color: #000000;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 50px;
+	text-transform: uppercase;
+	font-style: italic;
+  }
+  input[type="submit"] {
+	font-size: 1.5em;
+	width: 50%;
+	background-color: #000000;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 50px;
+	text-transform: uppercase;
+	font-style: italic;
+  }
+
+  label {
+	  margin: 10px 0;
+  }
+.content {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background-color: #161d75;
+	text-align: center;
+	padding: 10px 30px;
+}
+footer {
+	margin: 0 auto;
+	text-align: center;
+}
+footer h5 {
+	padding: 16px 0px;
+	margin: 0;
+}
+.pocetna {
+	min-height: 510px!important;
+}
+.pocetna {
+	padding: 4px 16px;
+}
+.pocetna h1, h2 {
+	text-align: center;
+}
+.pocetna h2 {
+	margin-bottom: 0;
+}
+.pocetna .interesovanja {
+	text-align: left;
+}
+.pocetna li {
+	list-style-type: none;
+}
+.pocetna ol {
+	margin: 0;
+	padding: 0;
+}
+.pocetna ol li {
+	width: 100%;
+	text-align: center;
+	color: black;
+	display: block;
+	background-size: cover;
+	background-position: center;
+	margin: 0.25% 0;
+}
+.pocetna li a {
+	color: #161d75;
+	padding: 20px;
+	display: block;
+	margin: auto;
+	width: 75%;
+}
+.pocetna span {
+	background-color: rgba(255,255,255,0.75);
+	padding: 8px;
+	font-weight: bold;
+	color: black;
+	text-transform: uppercase;
+	mix-blend-mode: screen;
+}
+
+.opisnagrade {
+	text-align: left;
+}
+
+.link-dugme{
+	background-color: white;
+	color: #161d75;
+	padding: 5px;
+	box-shadow: 0px 4px 5px rgba(0,0,0,0.5);
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.levo {
+	text-align: left;
+}
+.desno {
+	text-align: right;
+}
+
+.link-dugme.bela-pozadina {
+	width: 100%!important;
+}
+
+input {
+	text-align: center;
+}
+
+.cena {
+	text-align: left;
+}
+
+.filmovi h4 {
+	text-shadow: 2px 2px 3px black;
+}
+
+.tabela {
+	width: 40%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+h3.bela {
+	text-align: right;
+}
+
+input[type=text], textarea {
+	width: 100%;
+	font-size: 80%;
+	padding: 12px;
+	border: 2px solid #161d75;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+input[type=submit] {
+	font-size: 2em;
+	width: 100%;
+	background-color: #161d75;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 50px;
+	text-transform: uppercase;
+}
+
+.footer-icons{
+	padding-bottom: 1em;
+	color: white!important;
+}
+
+[class*="podela-"] {
+	float: left;
+	padding: 15px;
+}
+
+[class*="podela-"] img {
+	width: 100%;
+}
+
+.podela-1 {width: 8.3333%;}
+.podela-2 {width: 16.6666%;}
+.podela-3 {width: 25%;}
+.podela-4 {width: 33.3333%;}
+.podela-5 {width: 41.6666%;}
+.podela-6 {width: 50%;}
+.podela-7 {width: 58.3333%;}
+.podela-8 {width: 66.6666%;}
+.podela-9 {width: 75%;}
+.podela-10 {width: 83.3333%;}
+.podela-11 {width: 91.6666%;}
+.podela-12 {width: 100%;}
+
+.responsive::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+@media (max-width: 992px)	{
+	.logo{max-width: 15%} 
+	.header{min-height: 100px;} 
+	.headercontent{padding: 10px;} 
+	.content .pocetna {min-height: 950px!important;}
+	.wrapper{width: 100%;}
+	.navbar {margin: 0;}
+	.menu li a {font-size: 12px; padding: 20px 0;}
+	.kontakt div, input[type=submit] {font-size: 80%}
+	.bio img {width: 100%;}
+	.bio p {font-size: 0.6em;}
+	.pocetna ul li {width: 100%;}
+	.pocetna span {font-size: 90%;}
+	.slike img {width: 45%; padding: 0 2% 2% 2%;}
+	.tabela {width: 75%;}
+	.content {background-color: #161d75;}
+}
+@media (max-width: 601px) {
+	.title{display: none;} 
+	.content .pocetna {min-height: 900px!important;}
+	.mmenu {display: block!important}
+	.navbar {display: none;}
+	.lp img {width: 100%; height: auto;}
+	.lp p {text-align: justify; font-size: 0.8em}
+	.slike img {width: 90%; padding-bottom: 5%;}
+	.headergradient {background-image: linear-gradient(to right, rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); min-height: initial;}
+	.podela {width: 100%;}
+	[class*="podela-"] {width: 100%;}
+	h3.bela {text-align: center;}
+	.tabela {width: 100%; text-align: center;}
+	.levo, .desno {text-align: center;}
+}

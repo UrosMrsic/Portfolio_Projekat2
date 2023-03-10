@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Uroš Mršić</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Uroš Mršić">
+
+	<link href="css/style.css" rel="stylesheet" />
+	<script src="js/navbar_slajder.js"></script>
+	<script src="js/slanje.js"></script>
+	<script src="js/validacija.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+</head>
+<body>
+	
+	
+	<div class="header">
+		<div class="headergradient">
+			<div class="headercontent">
+			<p><a href="index.html"><img src="img/logo.png" class="logo" alt="Cinestar"></a> <span class="title">Bioskop Cinestar Pančevo</span></p>
+			<a href="javascript:void()" class="openbtn" onclick="openmNavSlide()"><i class="mmenu fas fa-bars"></i></a>
+			</div>
+		</div>
+	</div>
+	<div id="mNavSlide" class="mnav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closemNavSlide()"><i class="fas fa-times"></i></a>
+  <a href="index.html">Početna strana</a>
+  <a href="projekcije.html">Projekcije</a>
+  <a href="galerija.html">Galerija</a>
+  <a href="kontakt.html">Kontakt</a>
+  <a href="#" class="active">Rezervacije</a>
+  <a href="nagrade.html">Nagrade</a>
+</div>
+	
+	<div class="navbar">
+		<ul class="menu wrapper">
+			<li><a href="index.html">Početna strana</a>
+			</li><li><a href="projekcije.html">Projekcije</a>
+			</li><li><a href="galerija.html">Galerija</a>
+			</li><li><a href="kontakt.html">Kontakt</a>
+			</li><li><a href="#" class="active">Rezervacije</a>
+			</li><li><a href="nagrade.html">Nagrade</a></li>
+		</ul>
+	</div>
+	
+	<div class="content wrapper">
+		<div class="rezervacija">
+		  <h1 class="bela">Rezervacija</h1><hr><br>
+		  <form name="rezervacija">
+			<div class="podela-6">
+			  <label for="email">Vaša e-mail adresa:</label>
+			  <input type="email" id="email" placeholder="Email" required />
+			</div>
+			<div class="podela-6">
+			  <label for="telefon">Vaš broj telefona:</label>
+			  <input type="tel" pattern="[\+]{1}[3]{1}[8]{1}[[1]{1}[6]{1}[0-9]{1}\/[0-9]{2}-[0-9]{2}-[0-9]{3}" id="telefon" placeholder="+38160/12-34-567" required/>
+			</div>
+			<div>
+			  <label for="imefilma">Izaberite film:</label>
+			  <div>
+				<select id="imefilma" name="imefilma" class="podela-12" required>
+					<option value="/" disabled selected>Izaberite film</option>
+				  <option value="Matrix: Resurrection">Matrix: Resurrection</option>
+				  <option value="The King's Man">The King's Man</option>
+				  <option value="Dune">Dune</option>
+				  <option value="No Time to Die">No Time to Die</option>
+				  <option value="Spider-Man: No Way Home">Spider-Man: No Way Home</option>
+				  <option value="Nightmare Alley">Nightmare Alley</option>
+				  <option value="355">355</option>
+				  <option value="Clifford the Big Red Dog">Clifford the Big Red Dog</option>
+				</select>
+			  </div>
+			</div>
+			<div><br>
+			  <br />
+				<div class="podela-4">
+					<label for="termin">15:50</label>
+					<input type="radio" class="termin" name="termin" value="15:50" />
+				</div>
+				<div class="podela-4">
+					<label for="termin">20:00</label>
+					<input type="radio" class="termin" name="termin" value="20:00" />
+				</div>
+				<div class="podela-4">
+					<label for="termin">22:00</label>
+					<input type="radio" class="termin" name="termin" value="22:00" />
+				</div>
+			</div>
+			<div class="mt">
+			  <label for="brojKarata">Broj karata:</label>
+			  <input type="number" id="brojKarata" min="1" max="10" placeholder="Upišite broj" required />
+			</div>
+			
+			<button type="submit" onclick="validacija(); " class="bela-pozadina" id="save">Pošalji</button>
+			<button class="bela-pozadina"><a href="tabela.html">Proveri podatke</a></button>
+		  </form>
+		</div>
+	</div>
+	
+	<footer class="wrapper content responsive">
+		<h5 class="podela-6 levo">Copyright 2022 © Uroš Mršić</h5>
+		<div class="footer-icons podela-6 desno">
+			<a href="https://www.cinestarcinemas.rs/cinestar-pancevo"><i class="fab fa-facebook-square"></i></a>
+			<a href="https://www.cinestarcinemas.rs/cinestar-pancevo"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.cinestarcinemas.rs/cinestar-pancevo"><i class="fab fa-twitter-square"></i></a>
+		</div>
+	</footer>
+	
+</body>
+</html>
